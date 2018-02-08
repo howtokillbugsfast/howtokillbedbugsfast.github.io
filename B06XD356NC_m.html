@@ -1,0 +1,1380 @@
+<html class="a-touch a-mobile a-js a-audio a-video a-canvas a-svg a-drag-drop a-geolocation a-history a-webworker a-autofocus a-input-placeholder a-textarea-placeholder a-local-storage a-touch a-gradients a-hires a-transform3d a-touch-scrolling a-ios a-mobile a-text-shadow a-text-stroke a-box-shadow a-border-radius a-border-image a-opacity a-transform a-transition a-ember"
+data-19ax5a9jf="mongoose" data-aui-build-date="3.17.20-2018-01-27" data-aui-version="ba2471d4a1fa449c7766ae77e14d5a1fb290b45c">
+
+<head>
+  <script>
+    (function() {
+      var scriptURL = 'https://sdks.shopifycdn.com/buy-button/latest/buy-button-storefront.min.js';
+      if (window.ShopifyBuy) {
+        if (window.ShopifyBuy.UI) {
+          ShopifyBuyInit();
+        } else {
+          loadScript();
+        }
+      } else {
+        loadScript();
+      }
+
+      function loadScript() {
+        var script = document.createElement('script');
+        script.async = true;
+        script.src = scriptURL;
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(script);
+        script.onload = ShopifyBuyInit;
+
+      }
+
+      function ShopifyBuyInit() {
+        var client = ShopifyBuy.buildClient({
+          domain: 'howtokillbedbugsfast.myshopify.com',
+          apiKey: 'd264b7b997a5ede4e456a2a50e168857',
+          appId: '6',
+        });
+
+        ShopifyBuy.UI.onReady(client).then(function(ui) {
+          ui.createComponent('product', {
+            id: [504628019228],
+            node: document.getElementById('product-component-6e4f174a911'),
+            moneyFormat: '%24%7B%7Bamount%7D%7D',
+            options: {
+              "product": {
+                "variantId": "all",
+                "width": "440px",
+                "contents": {
+                  "img": false,
+                  "imgWithCarousel": false,
+                  "title": false,
+                  "variantTitle": false,
+                  "price": false,
+                  "description": false,
+                  "buttonWithQuantity": false,
+                  "quantity": false
+                },
+                "text": {
+                  "button": "Add to Cart"
+                },
+                "styles": {
+                  "product": {
+                    "text-align": "center",
+                    "@media (min-width: 601px)": {
+                      "max-width": "100%",
+                      "margin-left": "0",
+                      "margin-bottom": "10px"
+                    }
+                  },
+                  "button": {
+                    "background-color": "#F1C65B",
+                    "font-family": "Open Sans, sans-serif",
+                    "color": "black",
+                    "font-size": "15px",
+                    "padding-top": "18.5px",
+                    "padding-bottom": "18.5px",
+                    "padding-left": "100px",
+                    "margin-bottom": "20px",
+                    "padding-right": "100px",
+                    ":hover": {
+                      "background-color": "#F1C65B"
+                    },
+                    ":focus": {
+                      "background-color": "#F1C65B"
+                    },
+
+                  },
+                  "variantTitle": {
+                    "font-family": "Open Sans, sans-serif",
+                    "font-weight": "bold"
+                  },
+                  "title": {
+                    "font-family": "Open Sans, sans-serif"
+                  },
+                  "description": {
+                    "font-family": "Open Sans, sans-serif",
+                    "font-weight": "bold"
+                  },
+                  "price": {
+                    "font-family": "Open Sans, sans-serif",
+                    "font-weight": "bold"
+                  },
+                  "quantityInput": {
+                    "font-size": "15px",
+                    "padding-top": "15.5px",
+                    "padding-bottom": "15.5px"
+                  },
+                  "compareAt": {
+                    "font-size": "12px",
+                    "font-family": "Open Sans, sans-serif",
+                    "font-weight": "bold"
+                  }
+                },
+                "googleFonts": [
+                  "Open Sans",
+                  "Open Sans",
+                  "Open Sans",
+                  "Open Sans",
+                  "Open Sans",
+                  "Open Sans"
+                ]
+              },
+              "cart": {
+                "contents": {
+                  "button": true
+                },
+                "styles": {
+                  "button": {
+                    "background-color": "#F1C65B",
+                    "font-family": "Open Sans, sans-serif",
+                    "font-size": "15px",
+                    "color": "black",
+                    "margin-bottom": "10px",
+                    "padding-top": "15.5px",
+                    "padding-bottom": "15.5px",
+                    ":hover": {
+                      "background-color": "#F1C65B"
+                    },
+                    ":focus": {
+                      "background-color": "#F1C65B"
+                    },
+                    "font-weight": "bold"
+                  },
+                  "title": {
+                    "color": "#636363"
+                  },
+                  "footer": {
+                    "background-color": "#ffffff"
+                  },
+                  "header": {
+                    "color": "#636363"
+                  },
+                  "lineItems": {
+                    "color": "#636363"
+                  },
+                  "subtotalText": {
+                    "color": "#636363"
+                  },
+                  "subtotal": {
+                    "color": "#636363"
+                  },
+                  "notice": {
+                    "color": "#636363"
+                  },
+                  "currency": {
+                    "color": "#636363"
+                  },
+                  "close": {
+                    ":hover": {
+                      "color": "#636363"
+                    },
+                    "color": "#636363"
+                  },
+                  "emptyCart": {
+                    "color": "#636363"
+                  }
+                },
+                "googleFonts": [
+                  "Open Sans"
+                ]
+              },
+              "modalProduct": {
+                "contents": {
+                  "img": false,
+                  "imgWithCarousel": true,
+                  "variantTitle": false,
+                  "buttonWithQuantity": true,
+                  "button": false,
+                  "quantity": false
+                },
+                "styles": {
+                  "product": {
+                    "@media (min-width: 601px)": {
+                      "max-width": "100%",
+                      "margin-left": "0px",
+                      "margin-bottom": "0px"
+                    }
+                  },
+                  "button": {
+                    "background-color": "#F1C65B",
+                    "font-family": "Open Sans, sans-serif",
+                    "font-size": "15px",
+                    "padding-top": "15.5px",
+                    "padding-bottom": "15.5px",
+                    "padding-left": "60px",
+                    "padding-right": "60px",
+                    "margin-bottom": "10px",
+                    ":hover": {
+                      "background-color": "#F1C61B"
+                    },
+                    ":focus": {
+                      "background-color": "#F1C65B"
+                    },
+                    "font-weight": "bold"
+                  },
+                  "variantTitle": {
+                    "font-family": "Open Sans, sans-serif",
+                    "font-weight": "bold"
+                  },
+                  "title": {
+                    "font-family": "Open Sans, sans-serif"
+                  },
+                  "description": {
+                    "font-family": "Open Sans, sans-serif",
+                    "font-weight": "bold"
+                  },
+                  "price": {
+                    "font-family": "Open Sans, sans-serif",
+                    "font-weight": "bold"
+                  },
+                  "quantityInput": {
+                    "font-size": "15px",
+                    "padding-top": "15.5px",
+                    "padding-bottom": "15.5px"
+                  },
+                  "compareAt": {
+                    "font-family": "Open Sans, sans-serif",
+                    "font-weight": "bold"
+                  }
+                },
+                "googleFonts": [
+                  "Open Sans",
+                  "Open Sans",
+                  "Open Sans",
+                  "Open Sans",
+                  "Open Sans",
+                  "Open Sans"
+                ]
+              },
+              "toggle": {
+                "styles": {
+                  "toggle": {
+                    "font-family": "Open Sans, sans-serif",
+                    "background-color": "#F96302",
+                    ":hover": {
+                      "background-color": "#F96302"
+                    },
+                    ":focus": {
+                      "background-color": "#F96302"
+                    },
+                    "font-weight": "bold"
+                  },
+                  "count": {
+                    "font-size": "15px"
+                  }
+                },
+                "googleFonts": [
+                  "Open Sans"
+                ]
+              },
+              "option": {
+                "styles": {
+                  "label": {
+                    "font-family": "Open Sans, sans-serif",
+                    "font-weight": "bold"
+                  },
+                  "select": {
+                    "font-family": "Open Sans, sans-serif",
+                    "font-weight": "bold"
+                  }
+                },
+                "googleFonts": [
+                  "Open Sans",
+                  "Open Sans"
+                ]
+              },
+              "productSet": {
+                "styles": {
+                  "products": {
+                    "@media (min-width: 601px)": {
+                      "margin-left": "-20px"
+                    }
+                  }
+                }
+              },
+              "lineItem": {
+                "styles": {
+                  "variantTitle": {
+                    "color": "#636363"
+                  },
+                  "title": {
+                    "color": "#636363"
+                  },
+                  "price": {
+                    "color": "#636363"
+                  },
+                  "quantity": {
+                    "color": "#636363"
+                  },
+                  "quantityIncrement": {
+                    "color": "#636363",
+                    "border-color": "#636363"
+                  },
+                  "quantityDecrement": {
+                    "color": "#636363",
+                    "border-color": "#636363"
+                  },
+                  "quantityInput": {
+                    "color": "#636363",
+                    "border-color": "#636363"
+                  }
+                }
+              }
+            }
+          });
+        });
+      }
+    })();
+  </script>
+  <meta name="viewport" content="width=device-width, maximum-scale=1, minimum-scale=1, initial-scale=1, user-scalable=no, shrink-to-fit=no">
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/51qmkBF36fL._RC|01-yf03D4rL.css,01gq5Ie9j3L.css,31stfprY0tL.css,01d8Fs5iBdL.css,21ZwnZnTQ7L.css,11UksSmDw-L.css,11+zKfQDbkL.css,21quTPIGBxL.css,01jkimhv0aL.css,318hCTMRXQL.css,01COiFb05sL.css,01djTkqmZSL.css,11pdOHTh95L.css,21g9AOmZB5L.css,11X2-nh0PYL.css,01h2e2BEitL.css,11AYjYP-YzL.css,11aMMTVEKqL.css,11oyQ9RIYtL.css,01vd5lqeZUL.css,31k72ulyOYL.css,01kPgnKe7wL.css,01MGoIPodIL.css,01Alnvtt1zL.css,01BBs40O5ZL.css_.css?AUIClients/AmazonUI#mobile.us.not-trident">
+  <style>
+    .section-5 {
+      display: block;
+      -webkit-box-align: end;
+      -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+      align-items: flex-end;
+      background-image: linear-gradient(180deg, rgba(0, 0, 0, 0.95), rgba(42, 99, 104, 0.85));
+      background-position: 0px 0px, 50% 100%;
+      background-size: auto, cover;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400;
+    }.container-11 {
+      padding-bottom: 60px;
+    }.w-container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 940px;
+    }.w-container .w-row {
+      margin-left: -10px;
+      margin-right: -10px;
+    }.row-16 {
+      margin: 0px;
+      padding-top: 40px;
+      padding-bottom: 40px;
+    }.column-32 {
+      font-family: 'Open Sans', sans-serif;
+    }.column-33 {
+      font-family: 'Open Sans', sans-serif;
+    }.column-34 {
+      font-family: 'Open Sans', sans-serif;
+    }.w-col-2 {
+      width: 16.66666667%;
+      padding-bottom: 22px;
+    }.w-col-8 {
+      width: 66.66666667%;
+    }.w-col {
+      position: relative;
+      float: left;
+      width: 100%;
+      min-height: 1px;
+      padding-left: 10px;
+      padding-right: 10px;
+    }.foot-header {
+      padding-left: 10px;
+      padding-bottom: 17px;
+      font-family: 'Open Sans', sans-serif;
+      color: #fff;
+      font-size: 15px;
+    }.foot-links {
+      margin-top: 0px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      padding-left: 10px;
+      font-family: 'Open Sans', sans-serif;
+      color: hsla(0, 0%, 100%, .75);
+      font-size: 12px;
+      line-height: 21px;
+      font-weight: 200;
+      text-decoration: none;
+    }.div-block-17 {
+      margin-top: 35px;
+      margin-bottom: 0px;
+      font-size: 12px;
+    }.footerbottomline {
+      margin-top: 0px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+      font-family: 'Open Sans', sans-serif;
+      color: hsla(0, 0%, 100%, .75);
+      font-size: 12px;
+      line-height: 21px;
+      font-weight: 200;
+      text-align: center;
+    }.div-block-54 {
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      margin-top: 30px;
+      margin-bottom: 0px;
+      padding-right: 58px;
+      padding-left: 58px;
+      -webkit-justify-content: space-around;
+      -ms-flex-pack: distribute;
+      justify-content: space-around;
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+    }
+    .shopify-buy-modal-is-active {
+      height: 100%;
+      overflow: auto;
+      -webkit-overflow-scrolling: touch;
+    }
+
+    .shopify-buy-frame {
+      display: inline-block
+    }
+
+    .shopify-buy-frame iframe {
+      width: 100%;
+      display: block;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .shopify-buy-frame--cart {
+      width: 100%;
+      max-width: 350px;
+      position: fixed;
+      top: 0;
+      right: 0;
+      height: 100%;
+      z-index: 2147483647;
+      transform: translateX(100%);
+      -webkit-transform: translateX(100%)
+    }
+
+    .shopify-buy-frame--cart iframe {
+      height: 100%;
+    }
+
+    .shopify-buy-frame--cart.is-initialized {
+      -webkit-transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+      transition: all 250ms cubic-bezier(0.165, 0.84, 0.44, 1);
+    }
+
+    .shopify-buy-frame--cart.is-active {
+      transform: translateX(0);
+      -webkit-transform: translateX(0);
+    }
+
+    .shopify-buy-frame--product {
+      display: block
+    }
+
+    .shopify-buy-frame--product.shopify-buy__layout-horizontal {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .shopify-buy-frame--product.shopify-buy__layout-horizontal iframe {
+      max-width: 300%;
+    }
+
+    @media (min-width: 950px) {
+      .shopify-buy-frame--product.shopify-buy__layout-horizontal iframe {
+        max-width: 950px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .shopify-buy-frame--toggle {
+      display: inline-block
+    }
+
+    .shopify-buy-frame--toggle:not(.is-sticky) {
+      overflow: hidden;
+      padding: 5px;
+    }
+
+    .shopify-buy-frame--toggle.is-sticky {
+      display: none;
+      position: fixed;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      -webkit-transform: translateY(-50%);
+      z-index: 2147483645;
+    }
+
+    .shopify-buy-frame--toggle.is-active.is-sticky {
+      display: block;
+    }
+
+    .is-active {}
+
+    .is-active .shopify-buy-frame--toggle {}
+
+    .is-active .shopify-buy-frame--toggle iframe {
+      min-height: 67px;
+    }
+
+    .shopify-buy-frame--productSet {
+      width: 100%;
+    }
+
+    .shopify-buy-frame--modal {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 2147483646;
+      display: none;
+      -webkit-transition: background 300ms ease;
+      transition: background 300ms ease
+    }
+
+    .shopify-buy-frame--modal iframe {
+      height: 100%;
+      width: 100%;
+      max-width: none;
+    }
+
+    .shopify-buy-frame--modal.is-active {
+      background: rgba(0, 0, 0, .6);
+    }
+
+    .shopify-buy-frame--modal.is-block {
+      display: block;
+    }
+  </style>
+  <style>
+    .nav_button {
+      float: right;
+      height: 40px;
+      margin-top: 2px;
+      margin-bottom: auto;
+      background-color: #232F3E;
+      color: white;
+    }
+
+    .nav-sprite-v3 .nav-sprite {
+      background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/gno/sprites/new-nav-sprite-global-1x_blueheaven._CB491405107_.png);
+      background-repeat: no-repeat;
+    }
+
+    .nav-spinner {
+      background-image: url(https://images-na.ssl-images-amazon.com/images/G/01/javascripts/lib/popover/images/snake._CB192571611_.gif);
+    }
+    .mySlides {display:none}
+    .w3-left, .w3-right, .w3-badge {cursor:pointer}
+    .w3-badge {height:13px;width:13px;padding:0}
+    .w3-border{border:1px solid #ccc!important}
+    .w3-content{max-width:980px;margin:auto}
+    .w3-display-container:hover .w3-display-hover{display:block}
+    .w3-display-container:hover span.w3-display-hover{display:inline-block}
+    .w3-display-hover{display:none}
+    .w3-display-position{position:absolute}
+    .w3-display-container{position:relative}
+    .w3-center{text-align:center!important}
+    .w3-hover-text-black:hover{color:#000!important}
+    .w3-large{font-size:18px!important}
+    .w3-badge,.w3-tag{background-color:#000;color:#fff;display:inline-block;padding-left:8px;padding-right:8px;text-align:center}.w3-badge{border-radius:50%}
+    .w3-left{float:left!important}.w3-right{float:right!important}
+    .w3-display-bottommiddle{position:absolute;left:50%;bottom:0;transform:translate(-50%,0%);-ms-transform:translate(-50%,0%)}
+    .w3-text-black,.w3-hover-text-black:hover{color:#000!important}
+    .w3-white,.w3-hover-white:hover{color:#000!important;background-color:#fff!important}
+    .w3-black,.w3-hover-black:hover{color:#fff!important;background-color:#000!important}
+    .w3-section,.w3-code{margin-top:16px!important;margin-bottom:16px!important}
+    .w3-container:after,.w3-container:before,.w3-panel:after,.w3-panel:before,.w3-row:after,.w3-row:before,.w3-row-padding:after,.w3-row-padding:before,.w3-cell-row:before,.w3-cell-row:after,.w3-clear:after,.w3-clear:before,.w3-bar:before,.w3-bar:after{content:"";display:table;clear:both}
+  </style>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-white";
+    }
+  </script>
+  <link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/51WF4AVIWlL._RC|31H9QnSNj3L.css,01+72+wCC9L.css_.css?AUIClients/NavMobileMetaAsset#mobile">
+  <link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/21EugTBba7L.css?AUIClients/RetailSearchAutocompleteAssets#mobile">
+  <link rel="dns-prefetch" href="//images-na.ssl-images-amazon.com">
+  <link rel="stylesheet" href="https://images-na.ssl-images-amazon.com/images/I/01ekIXTj5kL._RC|01j62IBqyaL.css,41CNXGW6T4L.css,318TvQQkpyL.css,31tH-GJ-doL.css,01YiKvi4CgL.css,21xItms32EL.css,11q7D6YoQCL.css,018pZJ+Ms7L.css,21t5UAtA4iL.css,21mvSipn7pL.css,21qOYA5+VOL.css,21QwDiO8ycL.css,01IHzhAZ28L.css,31+w5stauML.css,01wBE2Z+USL.css,11xlykx3aFL.css,01D-B-OeNDL.css,21CNSKZ67ML.css,11rhPo030XL.css,11zgKVdkIJL.css,51oAYplAOyL.css,21aa6KfRqJL.css,21lDMA2J74L.css,21A-3ofYwnL.css,21thLxrpr2L.css,11P7nJr8UuL.css,012dCODns-L.css,11oH9gtOgDL.css,21ZKosCj0iL.css,313bzSzzhRL.css,21-9Q-rNd0L.css,01rgQ3jqo7L.css,01XzaDG7OBL.css,21Df5N8kF4L.css,71PTrscsQdL.css,014Z+MbaRaL.css,11hxZgqF80L.css,01QUs5FVXoL.css,016xTzXJLfL.css,31LBzl8T3vL.css,21DFs8eEV-L.css,11cAYJlTEgL.css,018mGORJ7tL.css,11fvu+DzMxL.css,11ho+83HCzL.css,01ticFfm7pL.css,01lh9w-GYYL.css,31UsSdSPS1L.css,11Mso4bvY-L.css,01LCsoCesOL.css,11kkkHiWcRL.css,010kw0xkZfL.css,21M+Dg4s3dL.css,11qL99m7IWL.css_.css?AUIClients/DetailPageMobileWebMetaAsset#mobile.us.not-trident.121035-T1.113788-C.93121-T1.126720-T1.114362-T1.119597-T1.111960-T1.103671-T2.107067-T2.53691-T1.118886-T1.110554-T1.123375-T1.108941-T1.123873-T1.114779-T1.120067-T1.123880-T1.123881-T1.106820-T1.121807-T1.101955-T1.98916-T1.111760-T1.111763-T1.108310-T1.115439-T1.56891-T1.96389-T1.108343-T1.108344-T1.109378-T1.83029-T1.131720-T1">
+  <meta http-equiv="content-type" content="text/html; charset=iso-8859-1"><!--title--><title> Proof Bed Bug Killer Spray - 100% Effective, Kills Bed Bugs and Their Eggs - Safe for Homes with Children and Pets - EPA Registered, Plant Based, Beats Pesticide Resistance : Garden &amp; Outdoor</title></head>
+
+<body class="a-m-us a-aui_107069-c a-aui_51744-c a-aui_57326-c a-aui_72554-c a-aui_accessibility_49860-c a-aui_attr_validations_1_51371-c a-aui_bolt_62845-c a-aui_ux_59374-c a-aui_ux_60000-c" cz-shortcut-listen="true">
+  <div id="a-page">
+    <header class="nav-mobile nav-locale-us nav-lang-en nav-ssl nav-unrec nav-blueheaven">
+      <div id="navbar" role="navigation" class="nav-t-standard nav-sprite-v3">
+        <div id="nav-logobar">
+          <div class="nav-left">
+            <div id="nav-logo">
+              <img src="./amazon_bug.svg" width="90" class="image-8" style="padding-left:4px;"></a>
+            </div>
+          </div>
+          <a href="https://www.howtokillbedbugsfast.com/products/bed-bug-kit.html" class="navbar w-nav-link">
+            <button class="nav_button">Starter Kit</button>
+          </a>
+          <a href="https://www.howtokillbedbugsfast.com/professional-help.html" class="navbar w-nav-link">
+            <button class="nav_button">Professional Help</button>
+          </a>
+          <a href="https://www.howtokillbedbugsfast.com/contact-us.html" class="navbar w-nav-link">
+            <button class="nav_button">Contact Us</button>
+          </a>
+        </div>
+      </div>
+    </header>
+    <div id="dp" class=" lawn_and_garden_mobile ">
+      <div class="a-container" role="main">
+        <div id="dpx-anywhere-atf_feature_div">
+          <div id="ppd" class="a-row">
+            <div id="productTitleGroupAnchor"><!--titleexpander--><span id="titleExpander"> 
+ <div id="productTitleExpanderRow" class="a-fixed-right-grid">
+  <div class="a-fixed-right-grid-inner" style="padding-right:11.6rem"> 
+   <div id="productTitleExpanderColumn" class="a-fixed-right-grid-col a-col-left" style="padding-right:0%;float:left;"> 
+    <span id="titleExpanderHeading"> 
+     <div id="byline_feature_div" class="t-prnt t-full"> 
+      <div id="byline" class="a-row a-spacing-none a-size-small feature a-text-ellipsis"> 
+       <a id="bylineContributor" class="a-size-small a-link-normal" href="/gp/aw/s//ref=mw_dp_a_s?ie=UTF8&amp;k=Proof">Proof</a> 
+      </div> 
+     </div> </span> 
+   </div> 
+   <div id="averageCustomerReviews_feature_div" class="a-fixed-right-grid-col a-text-right t-prnt t-full a-col-right" style="width:11.6rem;margin-right:-11.6rem;float:left;"> 
+    <a id="acrCustomerReviewLink" class="a-link-normal" href="/gp/aw/cr/B06XD356NC/ref=mw_dp_cr"> <i class="a-icon a-icon-star-mini a-star-mini-3-5"><span class="a-icon-alt">3.3 out of 5 stars</span></i> <span class="a-letter-space"></span> <span class="a-size-mini">339</span> <span id="textReviews" style="position: absolute; left: -10000px; top: auto; width: 2px; height: 1px; overflow: hidden;">Reviews</span> </a> 
+   </div> 
+  </div>
+ </div> <span id="titleExpanderContent"> 
+  <div id="title_feature_div" class="a-section a-spacing-mini t-prnt t-full"> 
+   <style>
+.atfRedesignV2 .collapsed #expandTitleToggle {
+background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/burj/dp_plus-sprite-2x._CB315922441_.png");
+top:1.4rem;
+right: 0rem;
+}
+.atfRedesignV2 .expanded #expandTitleToggle{
+background-image: url("https://images-na.ssl-images-amazon.com/images/G/01/burj/dp_min-sprite-2x._CB315922440_.png");
+bottom: 1rem;
+right: 1.6rem;
+}
+</style> 
+   <span data-feature-name="title" data-template-name="title" class="a-color-secondary"> <span id="title" class="a-size-small"> Proof Bed Bug Killer Spray – 100% Effective, Kills Bed Bugs and Their Eggs – Safe for Homes with Children and Pets - EPA Registered, Plant Based, Beats Pesticide Resistance </span> </span> 
+  </div> </span> </span><!--images--><div class="w3-content w3-display-container w3-center" style="max-width:800px">
+
+<img class="mySlides w3-center" src="https://images-na.ssl-images-amazon.com/images/I/41mGW03jjBL._SY400_.jpg" style="display:inline-block; height:300px; margin-left:auto; margin-right:auto">
+        <img class="mySlides w3-center" src="https://images-na.ssl-images-amazon.com/images/I/41zfCyNDnqL._SY400_.jpg" style="width:300px; margin-left:auto; margin-right:auto">
+        <img class="mySlides w3-center" src="https://images-na.ssl-images-amazon.com/images/I/41srQkKPpBL._SY400_.jpg" style="width:300px; margin-left:auto; margin-right:auto">
+        <img class="mySlides w3-center" src="https://images-na.ssl-images-amazon.com/images/I/51YUz8CQgTL._SY400_.jpg" style="width:300px; margin-left:auto; margin-right:auto">
+        <img class="mySlides w3-center" src="https://images-na.ssl-images-amazon.com/images/I/51oq0KeLE9L._SY400_.jpg" style="width:300px; margin-left:auto; margin-right:auto">
+        <img class="mySlides w3-center" src="https://images-na.ssl-images-amazon.com/images/I/41cIISgjBQL._SY400_.jpg" style="width:300px; margin-left:auto; margin-right:auto">
+        <img class="mySlides w3-center" src="https://images-na.ssl-images-amazon.com/images/I/41MTaqVQrRL._SY400_.jpg" style="width:300px; margin-left:auto; margin-right:auto">
+        <div class="w3-center w3-container w3-section w3-large w3-text-black w3-display-bottommiddle" style="height:10%">
+          <div class="w3-left w3-hover-text-black" onclick="plusDivs(-1)" style="position:relative; left:-50px;">&#10094;</div>
+          <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;</span>
+          <div class="w3-right w3-hover-text-black" onclick="plusDivs(1)" style="position:relative; right:-50px;">&#10095;</div>
+
+        </div>
+      </div>
+    </div>
+    <div id="newPitchPriceWrapper_feature_div" data-feature-name="newPitchPriceWrapper" data-template-name="newPitchPriceWrapper" class="a-section a-spacing-none feature t-prnt t-full">
+      <div class="a-section a-spacing-none">
+        <span class="a-size-small price-info-superscript">$</span><span class="price-large">24</span>
+        <span class="a-size-small price-info-superscript">97</span>
+      </div>
+
+
+      <div id="availability_feature_div" data-feature-name="availability" data-template-name="availability" class="a-section a-spacing-none feature t-prnt t-full">
+        <div class="a-section a-spacing-none">
+          <div id="availability" class="a-section a-spacing-none">
+            <span class="a-size-medium a-color-success">
+In Stock.
+</span>
+            <div class="a-section a-spacing-none">
+            </div>
+          </div>
+        </div>
+      </div>
+<div id="product-component-6e4f174a911" style="margin-left:auto; margin-right:auto;"></div>
+      <span>&nbsp;</span> 
+    </div>
+  </div>
+  <div id="WrapperDivToHideBTF" style="display:block;"><div class="t-full t-prnt" id="dpx-anywhere-about-this-item_feature_div"> 
+ <div id="mobile_aboutThisItemFeature_feature_div" data-feature-name="mobile_aboutThisItemFeature" data-template-name="mobile_aboutThisItemFeature" class="a-section a-spacing-none feature"> 
+  <div class="a-row a-spacing-large celwidget"> 
+   <div class="a-column a-span12"> 
+    <h2 class="a-box-title">About this item </h2> 
+    <div id="aboutThisItemFeature_boxGroup" class="a-box-group"> 
+     <div class="a-box feature">
+      <div class="a-box-inner"> 
+       <div id="aplus_feature_div" data-feature-name="aplus" data-template-name="aplus" class="a-section a-spacing-none"> 
+        <h3>From the manufacturer</h3> 
+        <div class="aplus-v2 mobile celwidget" cel_widget_id="m-aplus"> 
+         <style type="text/css">
+.aplus-v2.mobile {display:inherit}
+.aplus-v2.mobile .aplus-module {
+min-width:inherit;
+margin-bottom: 21px;
+}
+.aplus-v2.mobile .apm-sidemodule {width:inherit}
+.aplus-v2.mobile .apm-fixed-width {width:inherit}
+/* module-5 */
+.aplus-v2.mobile .module-5{overflow:auto}
+.aplus-v2.mobile .aplus-module-wrapper {
+display: block;
+}
+.aplus-v2.mobile img.apm-middle-image {
+vertical-align: middle;
+}
+.aplus-v2.mobile .apm-iconheader {
+display: inline;
+}
+.aplus-v2.mobile .apm-tablemodule {
+text-align: left;
+}
+.aplus-v2.mobile .apm-tablemodule-image {
+background-color: #FFFFFF;
+padding: 0 !important;
+text-align: center;
+overflow: hidden;
+vertical-align: bottom;
+}
+.aplus-v2.mobile .apm-tablemodule-table .aplus-table-heading {
+padding-bottom: 8px;
+text-align: center;
+}
+.aplus-v2.mobile .apm-tablemodule-keyhead {
+border-top: 1px solid #dddddd;
+padding: 8px 14px 6px !important;
+background-color: #f7f7f7;
+font-weight: normal;
+color: #626262;
+float: none !important;
+margin-right: 0;
+text-align: center;
+min-width: 106px;
+}
+.aplus-v2.mobile .apm-tablemodule-keyhead {
+border-right: 1px solid #dddddd;
+}
+.aplus-v2.mobile .apm-tablemodule-keyvalue .aplus-table-data {
+padding-top: 8px !important;
+padding-left: 14px;
+padding-bottom: 8px;
+border-top: 1px solid #dddddd;
+border-bottom: 1px solid #dddddd;
+min-width: 150px;
+}
+.aplus-v2.mobile .apm-tablemodule-image {
+background-color: #FFFFFF;
+padding: 0 !important;
+text-align: center;
+overflow: hidden;
+vertical-align: bottom;
+}
+.aplus-v2.mobile .apm-tablemodule-table .table-heading {
+padding-bottom: 8px;
+text-align: center;
+}
+.aplus-v2.mobile .apm-tablemodule-valuecell.selected {
+background-color: #fff5ec;
+}
+</style> 
+         <style type="text/css">
+.aplus-v2.mobile .launchpad-module { margin-left: auto; margin-right: auto; padding-top: 25px; padding-bottom: 25px; }
+.aplus-v2.mobile .launchpad-text-container { margin-left: auto; margin-right: auto; text-align: justify; -moz-text-align-last: center; text-align-last: center; }
+.aplus-v2.mobile .launchpad-text-center { text-align: center; }
+.aplus-v2.mobile .launchpad-text-left-justify { text-align: justify; -moz-text-align-last: left; text-align-last: left; }
+.aplus-v2.mobile .launchpad-video-container { margin-left: auto; margin-right: auto; }
+.aplus-v2.mobile .launchpad-module-video .aplusAiryVideoPlayer { margin-left: auto; margin-right: auto; padding-bottom: 25px; }
+.aplus-v2.mobile .launchpad-module-three-stack .launchpad-module-three-stack-container { display: table; margin-left: auto; margin-right: auto; }
+.aplus-v2.mobile .launchpad-module-three-stack .launchpad-module-three-stack-block { margin-bottom: 14px; }
+.aplus-v2.mobile .launchpad-module-three-stack .launchpad-module-three-stack-detail { display: table-caption; caption-side: bottom; }
+.aplus-v2.mobile .launchpad-module-left-image .launchpad-column-text-container { padding-right: 0; }
+.aplus-v2.mobile .launchpad-module-right-image .launchpad-column-text-container { padding-left: 0; }
+.aplus-v2.mobile .launchpad-about-the-startup h5 { font-weight: normal; font-style: italic; }
+.aplus-v2.mobile .launchpad-faq h2 { color: #ffa500; text-align: center; }
+.aplus-v2.mobile .launchpad-module-person-block { margin-bottom: 10px; }
+</style> 
+         <script>
+if(P) {
+P.when("a-expander").execute(function (expander) {
+expander.initializeExpanders();
+});
+}
+</script> 
+         <script>
+if(P) {
+P.when("A","ready").execute(function (A) {
+A.on('a:expander:aplus-module-expander:toggle:collapse', function(e) {
+var $ = A.$;
+var topOffset = $(e.expander.$expander[0]).offset().top;
+if ($(window).scrollTop() > topOffset) {
+$('html, body').animate({ scrollTop: topOffset });
+}
+});
+});
+}
+</script> 
+         <div class="celwidget aplus-module launchpad-company-logo" cel_widget_id="aplus-m-launchpad-company-logo"> 
+          <div class="a-section a-text-center launchpad-module launchpad-module-company-logo"> 
+           <img alt="" src="https://m.media-amazon.com/images/S/aplus-seller-content-images-us-east-1/ATVPDKIKX0DER/A3IRD7Y3EPIEYV/B06XD356NC/dZqugq9QIWN._UX582_TTW__.jpg"> 
+          </div> 
+         </div> 
+         <div class="celwidget aplus-module launchpad-brand-description-left" cel_widget_id="aplus-m-launchpad-brand-description-left"> 
+          <div class="a-section a-spacing-top-mini launchpad-module launchpad-module-brand-description-left"> 
+           <div class="a-section launchpad-text-left-justify"> 
+            <p> </p>
+            <p>Kill more bed bugs and protect your family with <span class="a-text-italic">Proof Bed Bug &amp; Dust Mite Killer</span>. Proof is 4X more effective at killing bed bugs in hard-to-reach places due to its unique, patented evaporation properties. It manages infestations 60%+ better than competitors by killing pesticide-resistant eggs, nymphs, and adults without harmful neurotoxins. The plant-based formula is safe for use in your home and EPA-registered, giving you the confidence to use it around your family and pets. Included with every purchase is a How-To Guide to make sure that you get the most out of Proof. Get Proof and save 90% versus an exterminator.<br> <br> <span class="a-text-italic">Effective when used as directed. Tested under laboratory conditions.</span></p> 
+            <p></p> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="celwidget aplus-module module-4" cel_widget_id="aplus-m-module-4"> 
+          <div class="aplus-module-wrapper"> 
+           <h3 class="a-spacing-medium"> Prepare to Kill Your Bed Bugs </h3> 
+           <div class="a-section"> 
+            <div class="a-section a-text-center"> 
+             <img alt="" src="https://m.media-amazon.com/images/S/aplus-seller-content-images-us-east-1/ATVPDKIKX0DER/A3IRD7Y3EPIEYV/B06XD356NC/2vDCCQ7Or._UX220_TTW__.jpg"> 
+            </div> 
+            <h4 class="a-spacing-mini"> Step 1 </h4> 
+            <p class="a-size-small"> Close off the room by taping off any gaps or holes that the bed bugs might be able to crawl through or in (e.g., doorways, cracks, windows, and vents). </p> 
+           </div> 
+           <div class="a-section"> 
+            <div class="a-section a-text-center"> 
+             <img alt="" src="https://m.media-amazon.com/images/S/aplus-seller-content-images-us-east-1/ATVPDKIKX0DER/A3IRD7Y3EPIEYV/B06XD356NC/l1YgyHqpThi2._UX220_TTW__.jpg"> 
+            </div> 
+            <h4 class="a-spacing-mini"> Step 2 </h4> 
+            <p class="a-size-small"> Put all your loose belongings sealed plastic bags. Try to reduce as much clutter as possible, as these items can harbor more bed bugs. </p> 
+           </div> 
+           <div class="a-section"> 
+            <div class="a-section a-text-center"> 
+             <img alt="" src="https://m.media-amazon.com/images/S/aplus-seller-content-images-us-east-1/ATVPDKIKX0DER/A3IRD7Y3EPIEYV/B06XD356NC/2f1bQXJRK62._UX220_TTW__.jpg"> 
+            </div> 
+            <h4 class="a-spacing-mini"> Step 3 </h4> 
+            <p class="a-size-small"> Collect your furniture and all other items to the center of the room to make it easier to treat those items and other areas of the room. This will also help contain the infestation. </p> 
+           </div> 
+           <div class="a-section"> 
+            <div class="a-section a-text-center"> 
+             <img alt="" src="https://m.media-amazon.com/images/S/aplus-seller-content-images-us-east-1/ATVPDKIKX0DER/A3IRD7Y3EPIEYV/B06XD356NC/375uQ7TtThY._UX220_TTW__.jpg"> 
+            </div> 
+            <h4 class="a-spacing-mini"> Step 4 </h4> 
+            <p class="a-size-small"> Heat treat your launderable items (e.g., clothes, fabrics, and linens) by loading them into the dryer and cycling them on high heat for a period of time, depending on the items. This will kill all of the bed bugs. </p> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="celwidget aplus-module module-9" cel_widget_id="aplus-m-module-9"> 
+          <div class="aplus-module-wrapper"> 
+           <div class=""> 
+            <h3 class="a-spacing-small"> Treat Your Infestation </h3> 
+            <p class="a-text-center"> <img alt="" src="https://m.media-amazon.com/images/S/aplus-seller-content-images-us-east-1/ATVPDKIKX0DER/A3IRD7Y3EPIEYV/B06XD356NC/a6cfox1SJa1._UX300_TTW__.jpg" class="a-spacing-mini"> <br> </p>
+            <h4 class="a-spacing-mini"> Step 5 </h4> 
+            <p class="a-spacing-base"> Spray Proof on your beddings, mattress, sheets, and other surrounding areas. Use 1 fl. oz. of spray per 1 to 6 sq. ft. depending on the absorbancy of the material. Leave on undisturbed for 4 hours. You may smell a strong scent while the product works—this is normal. </p> 
+            <p></p> 
+            <p class="a-text-center"> <img alt="" src="https://m.media-amazon.com/images/S/aplus-seller-content-images-us-east-1/ATVPDKIKX0DER/A3IRD7Y3EPIEYV/B06XD356NC/2TelDTBDTwmu._UX300_TTW__.jpg" class="a-spacing-mini"> <br> </p>
+            <h4 class="a-spacing-mini"> Step 6 </h4> 
+            <p class="a-spacing-base"> Use Proof to protect your home for the long-term be spraying it on or near cracks, joints, and hidden areas to kill bed bugs through residual contact for up to 2 weeks with a single application. </p> 
+            <p></p> 
+            <p class="a-text-center"> <img alt="" src="https://m.media-amazon.com/images/S/aplus-seller-content-images-us-east-1/ATVPDKIKX0DER/A3IRD7Y3EPIEYV/B06XD356NC/0LMsijJJTlSl._UX300_TTW__.jpg" class="a-spacing-mini"> <br> </p>
+            <h4 class="a-spacing-mini"> Step 7 </h4> 
+            <p class="a-spacing-base"> Apply every 1 to 2 weeks for ongoing protection for you and your family. </p> 
+            <p></p> 
+           </div> 
+          </div> 
+         </div> 
+         <div class="celwidget aplus-module module-4" cel_widget_id="aplus-m-module-4"> 
+          <div class="aplus-module-wrapper"> 
+           <h3 class="a-spacing-medium"> Prevent Future Infestations </h3> 
+           <div class="a-section"> 
+            <div class="a-section a-text-center"> 
+            </div> 
+            <h4 class="a-spacing-mini"> Mattress Encasement </h4> 
+            <p class="a-size-small"> Protect your mattress and yourself from bed bugs and bites. Bed bugs like to hide in the seams and creases of the material.<br> </p> 
+           </div> 
+           <div class="a-section"> 
+            <div class="a-section a-text-center"> 
+            </div> 
+            <h4 class="a-spacing-mini"> Insect Interceptor </h4> 
+            <p class="a-size-small"> Track bed bug activity around your bed and other furniture, and stop them in their tracks. </p> 
+           </div> 
+           <div class="a-section"> 
+            <div class="a-section a-text-center"> 
+            </div> 
+            <h4 class="a-spacing-mini"> Dessicant </h4> 
+            <p class="a-size-small"> Diatomaceous earth or silica powder can be used to dehydrate and kill any bed bugs that may have been missed during initial treatment. </p> 
+           </div> 
+           <div class="a-section"> 
+            <div class="a-section a-text-center"> 
+            </div> 
+            <h4 class="a-spacing-mini"> PROOF Bed Bug Spray </h4> 
+            <p class="a-size-small"> 100% effective at killing bed bugs, and for continual protection against bed bugs and pesticide-resistant eggs. </p> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div>
+     </div> 
+     <div class="a-box feature">
+      <div class="a-box-inner"> 
+       <div id="productDescription_feature_div" data-feature-name="productDescription" data-template-name="productDescription" class="a-section a-spacing-none"> 
+        <div class="a-section"> 
+         <span class="a-declarative" data-action="a-secondary-view" data-a-secondary-view="{&quot;backButtonText&quot;:&quot;Back&quot;,&quot;data&quot;:{&quot;secViewId&quot;:&quot;productDescription_secondary_view_div&quot;},&quot;name&quot;:&quot;productDescription_secondary_view_div&quot;}"> <a href="#" class="a-touch-link a-box a-touch-link-noborder">
+           <div class="a-box-inner">
+            <i class="a-icon a-icon-touch-link"></i> 
+            <h3> Description </h3> 
+            <div id="productDescription" class="a-section a-spacing-small"> 
+             <p class="a-color-base" dir="auto"> Kill your bed bugs and protect your family with Proof® Bed Bug &amp; Dust Mite Killer. Proof is 100% effective at killing bed bugs in all stages of life, and prevents infestations for up to 2 weeks throug ... </p> 
+            </div> 
+           </div></a> </span> 
+         <script type="text/javascript">
+P.when('jQuery','A', 'a-popover-base', 'a-popover-ajax').execute(function($, A, popovers, popoverAjax) {
+A.on("a:popover:beforeShow:productDescription_secondary_view_div", function(data){
+P.now('dpmob-sec-view-instrumentation').execute(function(secViewInstrumentation){
+if(typeof secViewInstrumentation !== "undefined") {
+// Record the click time before showing the secondary view.
+secViewInstrumentation.recordClickTime('productDescription');
+}
+});
+});
+A.on("a:popover:afterShow:productDescription_secondary_view_div", function(data){
+var featureName = 'productDescription';
+P.now('dpmob-sec-view-instrumentation').execute(function(secViewInstrumentation){
+if(typeof secViewInstrumentation !== "undefined") {
+// Record the end time once the secondary view is shown.
+secViewInstrumentation.recordEndTime(featureName);
+// Post the recorded metrics
+secViewInstrumentation.postMetrics(featureName);
+}
+});
+});
+});
+</script> 
+         <div class="a-popover-preload" id="a-popover-productDescription_secondary_view_div"> 
+          <h3> Description </h3> 
+          <div id="productDescription_fullView"> 
+           <h3></h3> 
+           <div class="a-section a-spacing-large"> 
+            <p> Kill your bed bugs and protect your family with Proof® Bed Bug &amp; Dust Mite Killer. Proof is 100% effective at killing bed bugs in all stages of life, and prevents infestations for up to 2 weeks through residual and direct contact*. It manages infestations by killing eggs, nymphs, and adults. The plant-based formula has been lab-tested and shown to be more effective than leading chemical pesticides. The formulation is not a neurotoxin, so it also works on pyrethroid-resistant bed bugs and eggs. Proof permeates throughout the infestation in cracks, joints, crevices, and other hard to reach areas by emitting a strong scent that lets you know that it is working and continuing to kill bed bugs for several weeks after the initial application. It meets the highest level of industry, regulatory, and environmental standards of safety and efficacy, and has achieved EPA registration. Proof Bed Bug &amp; Dust Mite Killer is ready-to-use and made in the USA. *When used as directed. Tested under laboratory conditions. </p> 
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div>
+     </div> 
+     <div class="a-box feature">
+      <div class="a-box-inner"> 
+       <div id="featureBulletsAndDetailBullets_feature_div" data-feature-name="featureBulletsAndDetailBullets" data-template-name="featureBulletsAndDetailBullets" class="a-section a-spacing-none"> 
+        <div class="a-section"> 
+         <span class="a-declarative" data-action="a-secondary-view" data-a-secondary-view="{&quot;backButtonText&quot;:&quot;Back&quot;,&quot;data&quot;:{&quot;secViewId&quot;:&quot;featureBulletsAndDetailBullets_secondary_view_div&quot;},&quot;name&quot;:&quot;featureBulletsAndDetailBullets_secondary_view_div&quot;}"> <a href="#" class="a-touch-link a-box a-touch-link-noborder">
+           <div class="a-box-inner">
+            <i class="a-icon a-icon-touch-link"></i> 
+            <h3> Features &amp; details </h3> 
+            <div id="featurebullets_feature_div"> 
+             <div id="feature-bullets" class="a-section a-spacing-small"> 
+              <ul class="a-unordered-list a-vertical a-spacing-none"> 
+               <li><span class="a-list-item">MORE EFFECTIVE. Proof uniquely kills bed bugs in hard to reach hiding places 4x better than competitor products due to its evaporation properties. Patented technology kills eggs and pesticide resistant bugs 60%+ better than competitors</span></li> 
+               <li><span class="a-list-item">EASIER TO USE. Comes with a detailed How-To Guide to make sure the product works for you. Customer support responds within 24 hours</span></li> 
+               <li><span class="a-list-item">ECONOMIC. This bed bug spray works 100% or your money back. Save 90% vs an exterminator</span></li> 
+              </ul> 
+             </div> 
+            </div> 
+           </div></a> </span> 
+         <script type="text/javascript">
+P.when('jQuery','A', 'a-popover-base', 'a-popover-ajax').execute(function($, A, popovers, popoverAjax) {
+A.on("a:popover:beforeShow:featureBulletsAndDetailBullets_secondary_view_div", function(data){
+P.now('dpmob-sec-view-instrumentation').execute(function(secViewInstrumentation){
+if(typeof secViewInstrumentation !== "undefined") {
+// Record the click time before showing the secondary view.
+secViewInstrumentation.recordClickTime('featureBulletsAndDetailBullets');
+}
+});
+});
+A.on("a:popover:afterShow:featureBulletsAndDetailBullets_secondary_view_div", function(data){
+var featureName = 'featureBulletsAndDetailBullets';
+P.now('dpmob-sec-view-instrumentation').execute(function(secViewInstrumentation){
+if(typeof secViewInstrumentation !== "undefined") {
+// Record the end time once the secondary view is shown.
+secViewInstrumentation.recordEndTime(featureName);
+// Post the recorded metrics
+secViewInstrumentation.postMetrics(featureName);
+}
+});
+});
+});
+</script> 
+         <div class="a-popover-preload" id="a-popover-featureBulletsAndDetailBullets_secondary_view_div"> 
+          <h1> About this item </h1> 
+          <div id="featurebullets_secondary_view_div" class="a-section"> 
+           <h3> Features </h3> 
+           <div id="feature-bullets" class="a-section a-spacing-small"> 
+            <ul class="a-unordered-list a-vertical a-spacing-none"> 
+             <li><span class="a-list-item">MORE EFFECTIVE. Proof uniquely kills bed bugs in hard to reach hiding places 4x better than competitor products due to its evaporation properties. Patented technology kills eggs and pesticide resistant bugs 60%+ better than competitors</span></li> 
+             <li><span class="a-list-item">EASIER TO USE. Comes with a detailed How-To Guide to make sure the product works for you. Customer support responds within 24 hours</span></li> 
+             <li><span class="a-list-item">ECONOMIC. This bed bug spray works 100% or your money back. Save 90% vs an exterminator</span></li> 
+             <li><span class="a-list-item">SAFE. EPA Registered, safe for use in homes with family and pets. Available at 5 major retailers and extensively tested</span></li> 
+             <li><span class="a-list-item">PLANT BASED. The active ingredient of Proof is 100% Organic Cold Pressed Neem Oil. Bed Bugs increasingly can't be killed by chemical based treatments due to pesticide resistance. Neem kills these bugs</span></li> 
+            </ul> 
+           </div> 
+          </div> 
+          <div id="energyEfficiency_secondary_view_div" class="a-section"> 
+          </div> 
+          <div id="productDetails_secondary_view_div" class="a-section"> 
+           <h3> <span>Product information</span> <span> <span class="a-color-secondary"> Water Based </span> </span> </h3> 
+           <div id="productDetails_techSpec_sections" class="a-section"> 
+            <h4></h4>
+            <table id="productDetails_techSpec_section_1" class="a-keyvalue prodDetTable" role="presentation">  
+             <tbody>
+              <tr> 
+               <th class="a-span3 prodDetSectionEntry"> Package Dimensions </th> 
+               <td class="a-span9 a-align-center prodDetSectionEntry"> 8.5 x 3.5 x 2.5 inches </td> 
+              </tr> 
+              <tr> 
+               <th class="a-span3 prodDetSectionEntry"> Item Weight </th> 
+               <td class="a-span9 a-align-center prodDetSectionEntry"> 1.25 pounds </td> 
+              </tr> 
+              <tr> 
+               <th class="a-span3 prodDetSectionEntry"> Shipping Weight </th> 
+               <td class="a-span9 a-align-center prodDetSectionEntry"> 1.25 pounds </td> 
+              </tr> 
+              <tr> 
+               <th class="a-span3 prodDetSectionEntry"> Manufacturer </th> 
+               <td class="a-span9 a-align-center prodDetSectionEntry"> Terramera </td> 
+              </tr> 
+              <tr> 
+               <th class="a-span3 prodDetSectionEntry"> ASIN </th> 
+               <td class="a-span9 a-align-center prodDetSectionEntry"> B06XD356NC </td> 
+              </tr> 
+              <tr> 
+              </tr> 
+              <tr> 
+              </tr>
+              <tr> 
+               <th class="a-color-secondary a-size-base prodDetSectionEntry">Customer Reviews</th> 
+               <td class="a-size-base"> 3.3 out of 5 stars <a class="a-link-normal" href="/gp/aw/cr/B06XD356NC/ref=mw_dp_cr"> <span class="a-letter-space"></span>339<span class="a-letter-space"></span>Reviews </a> </td> 
+              </tr>  
+              <tr> 
+              </tr>
+              <tr> 
+               <th class="a-color-secondary a-size-base prodDetSectionEntry"> Best Sellers Rank </th> 
+               <td> 228 </td> 
+              </tr>  
+              <tr> 
+               <th class="a-span3 prodDetSectionEntry"> Date first available at Amazon.com </th> 
+               <td class="a-span9 a-align-center prodDetSectionEntry"> March 1, 2017 </td> 
+              </tr> 
+             </tbody>
+            </table> 
+           </div> 
+           <script type="text/javascript">
+P.when('A', 'ready').execute(function(A) {
+var asin = "";
+A.declarative('enhanced-content-open-file', 'click', function(event) {
+var pageAction = event.data;
+window.ue.count("ProductInfo" + pageAction, 1);
+A.ajax('/gp/product/ajax-handlers/enhanced-content-popover-metrics.html', {
+method: 'post',
+params: {"asin": asin, "pageAction": pageAction}
+});
+});
+});
+</script> 
+          </div> 
+          <div id="weeeLogo_secondary_view_div" class="a-section"> 
+          </div> 
+          <div id="technicalSpecifications_secondary_view_div" class="a-section"> 
+           <div class="bucket feature" id="technicalSpecifications_feature_div"> 
+            <div class="a-divider a-divider-section">
+             <div class="a-divider-inner"></div>
+            </div> 
+            <h2 class="a-spacing-micro">Technical Details</h2>
+            <script type="text/javascript">P.when('a-expander').execute(function(expanders){try{expanders.initializeExpanders();} catch(e){}});</script> 
+            <div class="a-row">
+             <div aria-live="polite" data-a-expander-name="tech_details_expander" data-a-expander-collapsed-height="300" class="a-expander-collapsed-height a-row a-expander-container a-spacing-base a-expander-partial-collapse-container" style="max-height:300px; _height:300px">
+              <div aria-expanded="false" class="a-expander-content a-expander-partial-collapse-content">
+               <div class="a-column a-span12">
+                <table class="a-keyvalue">
+                 <tbody>
+                  <tr>
+                   <th>Color </th>
+                   <td>Water Based </td>
+                  </tr> 
+                  <tr>
+                   <th>Package Height </th>
+                   <td>2.52 x 3.54 x 8.5 inches </td>
+                  </tr> 
+                  <tr>
+                   <th>Shipping Weight </th>
+                   <td>1.25 pounds </td>
+                  </tr> 
+                 </tbody>
+                </table>
+               </div> 
+              </div>
+              <div class="a-expander-header a-expander-partial-collapse-header">
+               <a href="javascript:void(0)" data-action="a-expander-toggle" class="a-declarative" data-a-expander-toggle="{&quot;allowLinkDefault&quot;:true, &quot;expand_prompt&quot;:&quot;See More&quot;, &quot;collapse_prompt&quot;:&quot;See Less&quot;}"><i class="a-icon a-icon-extender-expand"></i><span class="a-expander-prompt">See More</span></a>
+              </div> 
+             </div>
+            </div>
+           </div> 
+          </div> 
+         </div> 
+        </div> 
+       </div> 
+      </div>
+     </div> 
+     <div class="a-box feature">
+      <div class="a-box-inner"> 
+       <div id="importantInformation_feature_div" data-feature-name="importantInformation" data-template-name="importantInformation" class="a-section a-spacing-none"> 
+        <div class="a-section"> 
+         <h3> Important information </h3> 
+         <p> </p>
+         <h4>Legal Disclaimer <span id="assocPunctuation"> : </span> </h4> 
+         <span>*Product is effective when used as directed. Tested under laboratory conditions.</span> 
+         <p></p> 
+        </div> 
+       </div> 
+      </div>
+     </div> 
+    </div> 
+   </div> 
+  </div> 
+ </div> 
+</div><div id="aw-udpv3-customer-reviews_feature_div" data-hook="reviews-mobile-widget" class="a-section a-spacing-large customerReviewsMobileFeature">
+ <div class="a-row a-spacing-small">
+  <h2 data-hook="reviews-mobile-title" class="a-spacing-micro customerReviewsTitle">Customer reviews</h2>
+  <div class="a-box-group">
+   <div class="a-box">
+    <div class="a-box-inner">
+     <a href="https://www.amazon.com/gp/aw/reviews/B06XD356NC/ref=cm_cr_dp_mb_top?ie=UTF8" data-hook="reviews-summary-mobile" class="a-touch-link a-box a-touch-link-noborder a-first reviewsSummary">
+      <div class="a-box-inner">
+       <i class="a-icon a-icon-touch-link"></i>
+       <div class="a-row">
+        <span data-hook="total-review-count" class="a-size-medium totalReviewCount a-text-bold">339 customer reviews</span>
+       </div>
+       <div class="a-icon-row a-spacing-micro">
+        <i data-hook="average-stars-rating-anywhere" class="a-icon a-icon-star a-star-3-5 averageStarRating"><span class="a-icon-alt">3.3 out of 5 stars</span></i>
+        <span data-hook="average-stars-rating-text" class="a-text-beside-button averageStarRatingText">3.3 out of 5 stars</span>
+       </div>
+      </div></a>
+    </div>
+   </div>
+   </div><div class="a-box-group"><div class="a-box"><div class="a-box-inner"><h3 class="a-spacing-small mostHelpfulReviewsTitle">Top reviews</h3><div id="cm-cr-dp-aw-review-list" class="a-row a-spacing-medium celwidget">
+ <style>
+.reviewText, .reviewByLine {
+word-wrap: break-word;
+}
+a.enthusiast-badge, a.enthusiast-badge:visited, a.enthusiast-badge:link
+{
+color: #538000; /*GREEN*/
+text-decoration: none;
+}
+</style> 
+ <div class="a-row">
+  <a href="https://www.amazon.com/gp/profile/amzn1.account.AGOS7W2NT6GQDN6QJEBOOMNW66KQ/ref=cm_cr_dp_mb_gw_tr?ie=UTF8" class="a-profile" data-a-size="small">
+   <div class="a-profile-content">
+    <span class="a-profile-name">Bisaacs</span>
+   </div></a>
+ </div>
+ <div id="R6HBP9HHHBJQ8" class="a-section a-spacing-medium">
+  <div id="customer_review-R6HBP9HHHBJQ8" class="a-section celwidget">
+   <a href="https://www.amazon.com/gp/aw/review/B06XD356NC/R6HBP9HHHBJQ8/ref=cm_cr_dp_mb_rvw_1?ie=UTF8&amp;cursor=1" class="a-touch-link a-box a-touch-link-noborder a-spacing-none review">
+    <div class="a-box-inner">
+     <i class="a-icon a-icon-touch-link"></i>
+     <div class="a-row a-spacing-none a-grid-vertical-align a-grid-center">
+      <i class="a-icon a-icon-star-small a-star-small-5 review-rating aok-align-center"><span class="a-icon-alt">5.0 out of 5 stars</span></i>
+      <span class="a-letter-space"></span>
+      <span data-hook="msrp-avp-badge-linkless" class="a-size-mini a-color-state a-text-bold">Verified Purchase</span>
+     </div>
+     <span class="a-size-base reviewText">UPDATE: This COMPLETELY solved our problem. I'm a bit sad now I didn't find this product before we paid for exterminators. We took two days to spray down every nook and...</span>
+    </div></a>
+  </div>
+ </div>
+ <div class="a-row">
+  <a href="https://www.amazon.com/gp/profile/amzn1.account.AEPB5MSTF5XHCERYK2YRTOIWXHIA/ref=cm_cr_dp_mb_gw_tr?ie=UTF8" class="a-profile" data-a-size="small">
+   <div class="a-profile-content">
+    <span class="a-profile-name">Amazon Customer</span>
+   </div></a>
+ </div>
+ <div id="R16FOX4XNSSYC2" class="a-section a-spacing-medium">
+  <div id="customer_review-R16FOX4XNSSYC2" class="a-section celwidget">
+   <a href="https://www.amazon.com/gp/aw/review/B06XD356NC/R16FOX4XNSSYC2/ref=cm_cr_dp_mb_rvw_2?ie=UTF8&amp;cursor=2" class="a-touch-link a-box a-touch-link-noborder a-spacing-none review">
+    <div class="a-box-inner">
+     <i class="a-icon a-icon-touch-link"></i>
+     <div class="a-row a-spacing-none a-grid-vertical-align a-grid-center">
+      <i class="a-icon a-icon-star-small a-star-small-5 review-rating aok-align-center"><span class="a-icon-alt">5.0 out of 5 stars</span></i>
+      <span class="a-letter-space"></span>
+      <span data-hook="msrp-avp-badge-linkless" class="a-size-mini a-color-state a-text-bold">Verified Purchase</span>
+     </div>
+     <span class="a-size-base reviewText">After 8 months of MANY DR. Appts for " hives " for my daughter.. I finally found the problem ... BED BUGS.. I was sooo disgusted..ESPECIALLY because I did look for...</span>
+    </div></a>
+  </div>
+ </div>
+ <div class="a-row">
+  <a href="https://www.amazon.com/gp/profile/amzn1.account.AE5Q4H72G2FDIUW2JVY2WTR5Q2UQ/ref=cm_cr_dp_mb_gw_tr?ie=UTF8" class="a-profile" data-a-size="small">
+   <div class="a-profile-content">
+    <span class="a-profile-name">Mazohyst</span>
+   </div></a>
+ </div>
+ <div id="R2DCEJIWJSHPAG" class="a-section a-spacing-medium">
+  <div id="customer_review-R2DCEJIWJSHPAG" class="a-section celwidget">
+   <a href="https://www.amazon.com/gp/aw/review/B06XD356NC/R2DCEJIWJSHPAG/ref=cm_cr_dp_mb_rvw_3?ie=UTF8&amp;cursor=3" class="a-touch-link a-box a-touch-link-noborder a-spacing-none review">
+    <div class="a-box-inner">
+     <i class="a-icon a-icon-touch-link"></i>
+     <div class="a-row a-spacing-none a-grid-vertical-align a-grid-center">
+      <i class="a-icon a-icon-star-small a-star-small-5 review-rating aok-align-center"><span class="a-icon-alt">5.0 out of 5 stars</span></i>
+     </div>
+     <span class="a-size-base reviewText">Seems to work really really well. I just recently saw this hassles last night. Was looking for a few hours before finally succumbing to sleep for something that I could do at...</span>
+    </div></a>
+  </div>
+ </div>
+ <div class="a-row">
+  <a href="https://www.amazon.com/gp/profile/amzn1.account.AEZK64CZVCWYPCKGVGCMW5DYZKUQ/ref=cm_cr_dp_mb_gw_tr?ie=UTF8" class="a-profile" data-a-size="small">
+   <div class="a-profile-content">
+    <span class="a-profile-name">Jenster</span>
+   </div></a>
+ </div>
+ <div id="R3IPEZJ7K373LK" class="a-section a-spacing-medium">
+  <div id="customer_review-R3IPEZJ7K373LK" class="a-section celwidget">
+   <a href="https://www.amazon.com/gp/aw/review/B06XD356NC/R3IPEZJ7K373LK/ref=cm_cr_dp_mb_rvw_4?ie=UTF8&amp;cursor=4" class="a-touch-link a-box a-touch-link-noborder a-spacing-none review">
+    <div class="a-box-inner">
+     <i class="a-icon a-icon-touch-link"></i>
+     <div class="a-row a-spacing-none a-grid-vertical-align a-grid-center">
+      <i class="a-icon a-icon-star-small a-star-small-2 review-rating aok-align-center"><span class="a-icon-alt">2.0 out of 5 stars</span></i>
+      <span class="a-letter-space"></span>
+      <span data-hook="msrp-avp-badge-linkless" class="a-size-mini a-color-state a-text-bold">Verified Purchase</span>
+     </div>
+     <span class="a-size-base reviewText">Sprayed this more than a month ago, and in spite of open windows, vacuuming, laundering of sheets, etc., the smell lingers. The bugs seemed to be gone for a while but are...</span>
+    </div></a>
+  </div>
+ </div>
+ <div class="a-row">
+  <a href="https://www.amazon.com/gp/profile/amzn1.account.AF6GOOMMNZXVGMQ3QTTROF2CCHIQ/ref=cm_cr_dp_mb_gw_tr?ie=UTF8" class="a-profile" data-a-size="small">
+   <div class="a-profile-content">
+    <span class="a-profile-name">Lina</span>
+   </div></a>
+ </div>
+ <div id="R15ZZQYYI3OBUB" class="a-section a-spacing-medium">
+  <div id="customer_review-R15ZZQYYI3OBUB" class="a-section celwidget">
+   <a href="https://www.amazon.com/gp/aw/review/B06XD356NC/R15ZZQYYI3OBUB/ref=cm_cr_dp_mb_rvw_5?ie=UTF8&amp;cursor=5" class="a-touch-link a-box a-touch-link-noborder a-spacing-none review">
+    <div class="a-box-inner">
+     <i class="a-icon a-icon-touch-link"></i>
+     <div class="a-row a-spacing-none a-grid-vertical-align a-grid-center">
+      <i class="a-icon a-icon-star-small a-star-small-5 review-rating aok-align-center"><span class="a-icon-alt">5.0 out of 5 stars</span></i>
+      <span class="a-letter-space"></span>
+      <span data-hook="msrp-avp-badge-linkless" class="a-size-mini a-color-state a-text-bold">Verified Purchase</span>
+     </div>
+     <span class="a-size-base reviewText">So far so good!! It’s been a week and we haven’t seen any bed bugs or gotten bit!!!!! Which I’m so happy about! We had 2 chemical sprays, and we still saw bed bugs and got...</span>
+    </div></a>
+  </div>
+ </div>
+ <div class="a-row">
+  <a href="https://www.amazon.com/gp/profile/amzn1.account.AGHUU3OULCBM2LB35MDZHU2WIWXA/ref=cm_cr_dp_mb_gw_tr?ie=UTF8" class="a-profile" data-a-size="small">
+   <div class="a-profile-content">
+    <span class="a-profile-name">C. Castleberry</span>
+   </div></a>
+ </div>
+ <div id="RP32PUCUUWX9N" class="a-section a-spacing-medium">
+  <div id="customer_review-RP32PUCUUWX9N" class="a-section celwidget">
+   <a href="https://www.amazon.com/gp/aw/review/B06XD356NC/RP32PUCUUWX9N/ref=cm_cr_dp_mb_rvw_6?ie=UTF8&amp;cursor=6" class="a-touch-link a-box a-touch-link-noborder a-spacing-none review">
+    <div class="a-box-inner">
+     <i class="a-icon a-icon-touch-link"></i>
+     <div class="a-row a-spacing-none a-grid-vertical-align a-grid-center">
+      <i class="a-icon a-icon-star-small a-star-small-5 review-rating aok-align-center"><span class="a-icon-alt">5.0 out of 5 stars</span></i>
+      <span class="a-letter-space"></span>
+      <span data-hook="msrp-avp-badge-linkless" class="a-size-mini a-color-state a-text-bold">Verified Purchase</span>
+     </div>
+     <span class="a-size-base reviewText">This product worked very well for me. We have used it in our house, my Grandmother's house and in a rent house. The rent house was the only site where we had to do a second...</span>
+    </div></a>
+  </div>
+ </div>
+ <div class="a-row">
+  <a href="https://www.amazon.com/gp/profile/amzn1.account.AERJ3UKIJQXBXBG3XAAY2SX4VUOQ/ref=cm_cr_dp_mb_gw_tr?ie=UTF8" class="a-profile" data-a-size="small">
+   <div class="a-profile-content">
+    <span class="a-profile-name">Veronica</span>
+   </div></a>
+ </div>
+ <div id="R62LYTG2WLE26" class="a-section a-spacing-medium">
+  <div id="customer_review-R62LYTG2WLE26" class="a-section celwidget">
+   <a href="https://www.amazon.com/gp/aw/review/B06XD356NC/R62LYTG2WLE26/ref=cm_cr_dp_mb_rvw_7?ie=UTF8&amp;cursor=7" class="a-touch-link a-box a-touch-link-noborder a-spacing-none review">
+    <div class="a-box-inner">
+     <i class="a-icon a-icon-touch-link"></i>
+     <div class="a-row a-spacing-none a-grid-vertical-align a-grid-center">
+      <i class="a-icon a-icon-star-small a-star-small-5 review-rating aok-align-center"><span class="a-icon-alt">5.0 out of 5 stars</span></i>
+      <span class="a-letter-space"></span>
+      <span data-hook="msrp-avp-badge-linkless" class="a-size-mini a-color-state a-text-bold">Verified Purchase</span>
+     </div>
+     <span class="a-size-base reviewText">Omg I wouldn't purchase anything else but this item again for any bug problem</span>
+    </div></a>
+  </div>
+ </div>
+ <div class="a-row">
+  <a href="https://www.amazon.com/gp/profile/amzn1.account.AGBR6BMEJM3SGV2XIM3QUYXXMSCQ/ref=cm_cr_dp_mb_gw_tr?ie=UTF8" class="a-profile" data-a-size="small">
+   <div class="a-profile-content">
+    <span class="a-profile-name">Clara Rodriguez</span>
+   </div></a>
+ </div>
+ <div id="RN33IRX58H19R" class="a-section a-spacing-medium">
+  <div id="customer_review-RN33IRX58H19R" class="a-section celwidget">
+   <a href="https://www.amazon.com/gp/aw/review/B06XD356NC/RN33IRX58H19R/ref=cm_cr_dp_mb_rvw_8?ie=UTF8&amp;cursor=8" class="a-touch-link a-box a-touch-link-noborder a-spacing-none review">
+    <div class="a-box-inner">
+     <i class="a-icon a-icon-touch-link"></i>
+     <div class="a-row a-spacing-none a-grid-vertical-align a-grid-center">
+      <i class="a-icon a-icon-star-small a-star-small-5 review-rating aok-align-center"><span class="a-icon-alt">5.0 out of 5 stars</span></i>
+      <span class="a-letter-space"></span>
+      <span data-hook="msrp-avp-badge-linkless" class="a-size-mini a-color-state a-text-bold">Verified Purchase</span>
+     </div>
+     <span class="a-size-base reviewText">I recommend this product because it is plant power based. I like that because I am living a vegetarian, cruelty free life, currently. This works really well with my lifestyle...</span>
+    </div></a>
+  </div>
+ </div>
+</div></div></div></div></div>
+    </div></div>
+    </div>
+  </div>
+</div>
+</div>
+<div class="section-5">
+    <div class="container-11 w-container">
+      <div class="row-16 w-row">
+        <div class="column-32 w-col w-col-2">
+          <div class="foot-header">MENU</div>
+          <div class="foot-links"><a href="https://www.howtokillbedbugsfast.com/products.html" class="link foot-links">Products</a></div>
+          <div class="foot-links"><a href="https://www.howtokillbedbugsfast.com/pages/how-to-kill-bed-bugs.html" class="link foot-links">Step-By-Step Guide</a></div>
+          <div class="foot-links"><a href="https://www.howtokillbedbugsfast.com/professional-help.html" class="link foot-links">Professional Help</a></div>
+          <div class="foot-links"><a href="https://www.howtokillbedbugsfast.com/contact-us.html" class="link foot-links">Contact Us</a></div>
+        </div>
+        <div class="column-33 w-col w-col-2">
+          <div class="foot-header">LET US HELP YOU</div>
+          <div class="foot-links"><a href="https://www.howtokillbedbugsfast.com/shipping-returns.html" class="link foot-links">Shipping &amp; Returns</a></div>
+          <div class="foot-links"><a href="https://www.howtokillbedbugsfast.com/terms-of-use.html" class="link foot-links">Terms of Use</a></div>
+          <div class="foot-links"><a href="https://www.howtokillbedbugsfast.com/privacy-policy.html" class="link foot-links">Privacy Policy</a></div>
+          <div class="foot-header">ABOUT HOW TO KILL YOUR BED BUGS</div>
+          <div class="foot-links footparagraph">How to Kill Bed Bugs Fast is dedicated to killing bed bugs quickly, effectively and safely for you and your family.</div>
+        </div>
+
+      </div>
+      <div class="div-block-17">
+        <div class="footerbottomline">Copyright 2018 Terramera Inc. All rights reserved.<br> "PROOF" is a registered trademark of Terramera, Inc.</div>
+      </div>
+      <div class="div-block-54"><img src="./images/ApplePat.png" width="59" srcset="./images/ApplePat-p-500.png 500w, ./images/ApplePat-p-800.png 800w, ./images/ApplePat.png 976w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 8vw, (max-width: 991px) 30.59375px, 41.1875px" class="paymentmethodicon"><img src="./images/Mastercard.png" width="56" class="paymentmethodicon"><img src="./images/AmericanExpress.png" width="54" class="paymentmethodicon"></div><div class="div-block-54"><img src="./images/VISA.png" width="83" srcset="./images/VISA-p-500.png 500w, ./images/VISA.png 900w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 8vw, (max-width: 991px) 30.59375px, 41.1875px" class="paymentmethodicon">
+      <img src="./images/DinersClub.png" width="41" class="paymentmethodicon"><img src="./images/JCB.png" width="72" srcset="./images/JCB-p-500.png 500w, ./images/JCB.png 700w" sizes="(max-width: 479px) 100vw, (max-width: 767px) 8vw, (max-width: 991px) 30.59375px, 41.1875px" class="paymentmethodicon"></div>
+    </div>
+  </div>
